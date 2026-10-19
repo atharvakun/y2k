@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RAINBOW.EXE — Drop 01</title>
+<meta name="description" content="RAINBOW.EXE — a Y2K clothing label. Drop 01: eight pieces, four tiers, seven stripes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Space+Mono:wght@400;700&family=Instrument+Serif:ital@1&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23070708'/%3E%3Ccircle cx='16' cy='16' r='9' fill='%23C6FF3D'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- ============ BOOT ============ -->
+<div id="boot" aria-hidden="true">
+  <div class="boot-inner">
+    <pre class="boot-log" id="bootLog"></pre>
+    <div class="boot-bar"><div class="boot-fill" id="bootFill"></div></div>
+    <div class="boot-pct"><span id="bootPct">0</span>%</div>
+    <button class="boot-enter" id="bootEnter">▶ CLICK TO ENTER RAINBOW.EXE</button>
+  </div>
+  <div class="scanlines"></div>
+</div>
+
+<!-- ============ GLOBAL LAYERS ============ -->
+<div class="grid-bg" aria-hidden="true"></div>
+<div class="noise" aria-hidden="true"></div>
+<div class="cur" id="cur" aria-hidden="true"></div>
+<div class="cur-ring" id="curRing" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <a class="logo" href="#top" data-hover>RAINBOW<span>.EXE</span><small>v2.000</small></a>
+  <nav class="nav-links">
+    <a href="#index" data-hover>Index</a>
+    <a href="#drop" data-hover>Drop 01</a>
+    <a href="#archive" data-hover>Archive</a>
+    <a href="#tiers" data-hover>Tiers</a>
+    <a href="#system" data-hover>System</a>
+  </nav>
+  <div class="nav-right">
+    <span class="clock" id="clock">00:00:00</span>
+    <button class="bag-btn" id="bagBtn" data-hover>BAG&nbsp;[<span id="bagCount">0</span>]</button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero-meta mono">
+    <span>RAINBOW.EXE</span><span>DROP 01</span><span>S/S 2000</span><span>PUNE → WORLD</span>
+  </div>
+
+  <h1 class="hero-title">
+    <span class="line"><span class="w chrome-text">A RAINBOW</span></span>
+    <span class="line"><span class="w hollow">OF FITS<i class="serif">.</i></span></span>
+  </h1>
+
+  <div class="orb-wrap" aria-hidden="true">
+    <div class="orb"></div>
+    <svg class="orb-ring" viewBox="0 0 300 300">
+      <defs><path id="ringPath" d="M150,150 m-125,0 a125,125 0 1,1 250,0 a125,125 0 1,1 -250,0"/></defs>
+      <text><textPath href="#ringPath">SEVEN THOUGHTFUL WAYS TO DRESS LIKE IT'S 2000 ✦ CHROME · LIME · SEVEN STRIPES ✦ </textPath></text>
+    </svg>
+  </div>
+
+  <div class="hero-bottom">
+    <dl class="stats">
+      <div><dt>PIECES</dt><dd data-count="8">00</dd></div>
+      <div><dt>TIERS</dt><dd data-count="4">00</dd></div>
+      <div><dt>STRIPES</dt><dd data-count="7">00</dd></div>
+      <div><dt>YEAR</dt><dd data-count="2000">0000</dd></div>
+    </dl>
+    <div class="hero-cta">
+      <a class="btn btn-lime" href="#drop" data-hover>ENTER THE DROP</a>
+      <button class="btn" id="heroPop" data-hover>OPEN WINDOWS</button>
+    </div>
+  </div>
+  <div class="spectrum"></div>
+</section>
+
+<!-- ============ TICKER ============ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>FREE SHIPPING OVER ₹2000 &nbsp;✦&nbsp; DROP 01 LIVE &nbsp;✦&nbsp; 08 PIECES / 04 TIERS / 07 STRIPES &nbsp;✦&nbsp; BEST VIEWED AT 800×600 &nbsp;✦&nbsp; NO REFUNDS ON VIBES &nbsp;✦&nbsp; EVERY WINDOW IS DRAGGABLE &nbsp;✦&nbsp; </span>
+    <span>FREE SHIPPING OVER ₹2000 &nbsp;✦&nbsp; DROP 01 LIVE &nbsp;✦&nbsp; 08 PIECES / 04 TIERS / 07 STRIPES &nbsp;✦&nbsp; BEST VIEWED AT 800×600 &nbsp;✦&nbsp; NO REFUNDS ON VIBES &nbsp;✦&nbsp; EVERY WINDOW IS DRAGGABLE &nbsp;✦&nbsp; </span>
+  </div>
+</div>
+
+<!-- ============ 01 INDEX ============ -->
+<section class="index" id="index">
+  <div class="sec-side">
+    <span class="sec-num">01</span>
+    <h2 class="sec-title rv">SEVEN<br>REASONS</h2>
+    <p class="sec-copy rv">A highpoint is usually where you arrive. Ours is where you get dressed. Seven offerings, one per stripe.</p>
+  </div>
+  <ol class="rows">
+    <li class="row rv" style="--rc:#B98BD1"><span class="idx">01</span><h3>Trusted Chrome</h3><p>Mirror hardware, zips, eyelets. Reflects haters at 1:1.</p></li>
+    <li class="row rv" style="--rc:#8F8BE0"><span class="idx">02</span><h3>Smart Location</h3><p>Pockets exactly where your hands already are. 0.3 km from your phone.</p></li>
+    <li class="row rv" style="--rc:#79BDEB"><span class="idx">03</span><h3>Rising Aspirations</h3><p>Low-rise cuts. High-rise ambitions. Different storeys for different days.</p></li>
+    <li class="row rv" style="--rc:#93CF86"><span class="idx">04</span><h3>Safety &amp; Sustainability</h3><p>Deadstock fabric, rain-washed denim, earthquake-resistant stitching.</p></li>
+    <li class="row rv" style="--rc:#EACB6E"><span class="idx">05</span><h3>Care In Details</h3><p>Butterfly clips included. Rhinestones set by someone who cares too much.</p></li>
+    <li class="row rv" style="--rc:#F29A6B"><span class="idx">06</span><h3>Every Budget</h3><p>Silver → Gold → Platinum → Diamond. Pick a tier. Keep your rent.</p></li>
+    <li class="row rv" style="--rc:#F28A94"><span class="idx">07</span><h3>Thriving Community</h3><p>6000+ families of fits. Sign the guestbook. Bring your cousin.</p></li>
+  </ol>
+</section>
+
+<!-- ============ 02 DROP ============ -->
+<section class="drop" id="drop">
+  <header class="drop-head">
+    <div>
+      <span class="sec-num">02</span>
+      <h2 class="sec-title rv">DROP 01<i class="serif">—</i>08 PIECES</h2>
+    </div>
+    <div class="filters rv" id="filters">
+      <button class="chip on" data-f="all" data-hover>ALL</button>
+      <button class="chip" data-f="Silver" data-hover>SILVER</button>
+      <button class="chip" data-f="Gold" data-hover>GOLD</button>
+      <button class="chip" data-f="Platinum" data-hover>PLATINUM</button>
+      <button class="chip" data-f="Diamond" data-hover>DIAMOND</button>
+    </div>
+  </header>
+  <div class="grid" id="grid"></div>
+</section>
+
+<!-- ============ 03 ARCHIVE ============ -->
+<section class="archive" id="archive">
+  <div class="ar-pin">
+    <div class="ar-track" id="arTrack">
+      <div class="ar-panel" data-g="babytee" style="--g:#F28A94"><span class="ar-word chrome-text">DRESS</span><span class="ar-cap">ARCHIVE / 01 — BABY TEE</span></div>
+      <div class="ar-panel" data-g="cargo" style="--g:#93CF86"><span class="ar-word hollow">LOUD</span><span class="ar-cap">ARCHIVE / 02 — CARGO</span></div>
+      <div class="ar-panel" data-g="jacket" style="--g:#B98BD1"><span class="ar-word chrome-text">STAY</span><span class="ar-cap">ARCHIVE / 03 — PUFFER</span></div>
+      <div class="ar-panel" data-g="visor" style="--g:#79BDEB"><span class="ar-word hollow">SOFT<i class="serif">.</i></span><span class="ar-cap">ARCHIVE / 04 — VISOR</span></div>
+    </div>
+    <div class="ar-hud mono"><span>03 / ARCHIVE</span><span id="arProg">000%</span></div>
+  </div>
+</section>
+
+<!-- ============ 04 TIERS ============ -->
+<section class="tiers" id="tiers">
+  <div class="sec-side">
+    <span class="sec-num">04</span>
+    <h2 class="sec-title rv">MOVE UP<br>IN LIFE</h2>
+    <p class="sec-copy rv">Four space-optimised membership layouts. Possession: immediate. Subject to vibes.</p>
+  </div>
+  <div class="tier-list">
+    <article class="tier rv" data-tier="Silver"><span class="t-name t-silver">SILVER</span><span class="t-sq">667 <small>sq.ft of drip</small></span><ul><li>Early access: 0 min</li><li>1 butterfly clip</li><li>Guestbook rights</li></ul><span class="t-price">FREE</span><button class="btn btn-sm tier-btn" data-hover>JOIN</button></article>
+    <article class="tier rv" data-tier="Gold"><span class="t-name t-gold">GOLD</span><span class="t-sq">694 <small>sq.ft of drip</small></span><ul><li>Early access: 24 h</li><li>3 butterfly clips</li><li>Birthday window</li></ul><span class="t-price">₹999 / yr</span><button class="btn btn-sm tier-btn" data-hover>JOIN</button></article>
+    <article class="tier rv" data-tier="Platinum"><span class="t-name t-platinum">PLATINUM</span><span class="t-sq">715 <small>sq.ft of drip</small></span><ul><li>Early access: 72 h</li><li>Chrome keychain</li><li>Name in the ticker</li></ul><span class="t-price">₹2,499 / yr</span><button class="btn btn-sm tier-btn" data-hover>JOIN</button></article>
+    <article class="tier rv" data-tier="Diamond"><span class="t-name t-diamond">DIAMOND</span><span class="t-sq">755 <small>sq.ft of drip</small></span><ul><li>Early access: forever</li><li>Walk-in wardrobe</li><li>We text you first</li></ul><span class="t-price">₹7,777 / yr</span><button class="btn btn-sm tier-btn" data-hover>JOIN</button></article>
+  </div>
+</section>
+
+<!-- ============ 05 SYSTEM ============ -->
+<section class="system" id="system">
+  <div class="sec-side">
+    <span class="sec-num">05</span>
+    <h2 class="sec-title rv">WINDOW<br>MANAGER</h2>
+    <p class="sec-copy rv">Every product, bag and dialog on this site is a draggable window. Spawn a few. Build a little city. Esc closes everything.</p>
+    <div class="sys-ctrl rv">
+      <button class="btn btn-lime" id="spawnOne" data-hover>SPAWN ONE</button>
+      <button class="btn" id="spawnStorm" data-hover>SPAWN STORM</button>
+      <button class="btn" id="closeAll" data-hover>CLOSE ALL</button>
+    </div>
+    <dl class="sys-stats rv"><div><dt>OPEN</dt><dd id="winCount">0</dd></div><div><dt>SPAWNED</dt><dd id="winTotal">0</dd></div><div><dt>IN BAG</dt><dd id="bagStat">0</dd></div></dl>
+  </div>
+  <div class="term rv" id="term" aria-live="polite"></div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="foot">
+  <div class="spectrum"></div>
+  <div class="foot-grid">
+    <div>
+      <div class="foot-logo">RAINBOW<span>.EXE</span></div>
+      <p class="mono muted">Office No. 2000, 3rd Floor, Rainbow Plaza.<br>Somewhere near 18 Latitude, Earth.</p>
+    </div>
+    <form class="guestbook" id="guestbook">
+      <label for="gbName" class="mono">SIGN THE GUESTBOOK</label>
+      <div class="gb-row">
+        <input id="gbName" type="text" placeholder="your name" required autocomplete="off">
+        <button class="btn btn-lime btn-sm" type="submit" data-hover>SIGN</button>
+      </div>
+    </form>
+    <div class="counter-wrap mono">
+      <span class="muted">HIT COUNTER</span>
+      <div class="counter" id="hitCounter">000137420</div>
+      <span class="muted small">BEST VIEWED AT 800×600 · NETSCAPE 4.7 · © 2000–2026</span>
+    </div>
+  </div>
+  <p class="legal mono muted">All garments, chrome and windows are artistic impressions for representation purposes only. The developer reserves the right to modify fits, stripes and vibes without prior notice.</p>
+</footer>
+
+<div id="winLayer"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
